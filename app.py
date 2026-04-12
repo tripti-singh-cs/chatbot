@@ -3,8 +3,10 @@ from utils import get_llm
 
 st.title("💬 Chatbot")
 
+#LLM initialize
 llm = get_llm()
 
+# Initialize chat history in session state tmporary
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
