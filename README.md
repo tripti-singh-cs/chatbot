@@ -20,7 +20,7 @@ It demonstrates how Large Language Models (LLMs) can be used for real-world appl
 * Python
 * Streamlit
 * LangChain
-* APIs (Mistral / Tavily)
+* APIs (Mistral)
 
 ---
 
@@ -33,10 +33,10 @@ It demonstrates how Large Language Models (LLMs) can be used for real-world appl
    cd repo-name
 
 3. Create virtual environment:
-   python -m venv .venv
+   uv venv
 
 4. Activate environment:
-   .venv\Scripts\activate
+   source .venv/bin/activate
 
 5. Install dependencies:
    pip install -r requirements.txt
@@ -51,6 +51,8 @@ It demonstrates how Large Language Models (LLMs) can be used for real-world appl
 Create a `.env` file and add your API keys:
 
 MISTRAL_API_KEY=your_key_here
-TAVILY_API_KEY=your_key_here
 
 ---
+
+Live Demo 
+http://localhost:8502/
