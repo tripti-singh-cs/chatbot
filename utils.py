@@ -1,4 +1,5 @@
-from langchain_mistralai import ChatMistralAI
+# from langchain_mistralai import ChatMistralAI
+from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 import os
 
@@ -6,10 +7,11 @@ load_dotenv()
 
 def get_llm():
 
-    llm = ChatMistralAI(
-        model="mistral-large-latest",
+    llm = ChatGroq(
+        # model="open-mistral-nemo",
+        model="openai/gpt-oss-20b",
         temperature=0.7,
-        mistral_api_key=os.getenv("MISTRAL_API_KEY")
+        groq_api_key=os.getenv("GROQ_API_KEY")
     )
 
     return llm
